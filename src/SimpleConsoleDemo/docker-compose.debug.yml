@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  simpleconsoledemo:
+    image: username/simpleconsoledemo:Debug
+    environment:
+      - REMOTE_DEBUGGING=${REMOTE_DEBUGGING}
+    volumes:
+      - .:/app
